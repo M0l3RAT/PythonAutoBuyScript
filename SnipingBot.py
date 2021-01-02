@@ -7,6 +7,7 @@ class ProcessorBot():
 
     def login(self):
         self.driver.get('https://www.amazon.com')
+        #the sleep is long enough for you to sign in
         sleep(50)
 
     def checkAndBuy(self):
@@ -14,7 +15,8 @@ class ProcessorBot():
         sleep(1)   
         try:
             buyNow = self.driver.find_element_by_xpath('//*[@id="add-to-cart-button"]')
-            #buyNow.click()
+            #remove the comments on the clicks for it to actually buy.
+            #buyNow.click() 
             sleep(2)
             buyNow2 = self.driver.find_element_by_xpath('//*[@id="hlb-ptc-btn"]')
             #buyNow2.click()
