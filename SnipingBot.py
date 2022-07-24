@@ -33,7 +33,7 @@ bot = ProcessorBot()
 bot.login()
 bot.checkAndBuy()
 
-
+#change the checkandbuy url to change the item your buying, must be an amazon link
 
 
 
